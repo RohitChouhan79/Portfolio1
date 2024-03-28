@@ -1,0 +1,136 @@
+.Skill{
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;/
+}
+.Skill-head{
+    height: 95%;
+    width: 95%;
+    /* background-color: #00D7FA; */
+    /* border: 2px solid red; */
+}
+.Skill-head>h1{
+    margin-top: 18px;
+    font-size: 40px;
+    text-align: center;
+    color: yellowgreen;
+    
+}
+.Skill-head>h1>span{
+    font-size: 55px;
+    color: Red;
+    font-variant: small-caps;
+
+}
+.Skill-head>h2{
+    margin-top: 18px;
+    font-size: 25px;
+    text-align: center;
+    color:purple;
+}
+.Skill-head > .skilles {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap onto multiple lines */
+    justify-content: center; /* Center skills horizontally */
+    /* background-color: #00D7FA; */
+}
+.inskil {
+    /* background-color: red; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.inskil:hover {
+    transform: scale(1.5);
+}
+
+
+.inskil > p {
+    margin-top: 2px;
+    font-size: 15px;
+}
+.html{
+    margin-top: 4px;
+    font-size: 60px;
+    color: #E24D25;
+}
+.Python{
+    margin-top: 4px;
+    font-size: 60px;
+}
+
+.ex{
+    margin-top: 4px;
+    font-size: 60px; 
+}
+
+.Css{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #016EB9;
+}
+
+.Js{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #F7DE1F;
+}
+.NJs{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #89C74F;
+}
+
+.react{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #00D7FA;
+}
+
+.MDB{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #50A84A;
+}
+
+.TS{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #2E77C4;
+}
+
+.TCSS{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #17B2B7;
+}
+.framer{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #000000;
+}
+
+.bootstrap{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #7710F7;
+}
+
+.firebase{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #F6840F;
+}
+
+

@@ -1,0 +1,48 @@
+.navbar{
+    height:80px;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color:#0C0C1E;
+}
+
+.wrapper{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    /* background-color: #fff; */
+}
+    
+.wrapper>span{
+    font: bold;
+}
+
+
+.social{
+    display: flex;
+    gap: 20px;
+}
+
+.facebook{
+    font-size: 25px;
+    color: blue;
+}
+
+.instagram{
+    font-size: 25px;
+    color: red;
+}
+
+.Linklndn{
+    font-size: 25px;
+    color:rgb(51, 51, 250);
+}
+
+.git{
+    font-size: 25px;
+    color: aliceblue;
+}
