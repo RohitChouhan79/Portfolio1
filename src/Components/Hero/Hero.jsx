@@ -41,6 +41,19 @@ const sliderVariants = {
   };
 
 export const Hero = () => {
+    const downloadResume = () => {
+        // Replace 'resume.pdf' with the path to your resume file
+        const resumeUrl = '/Rohit-mern-Resume.pdf';
+        // Create a temporary anchor element
+        const anchor = document.createElement('a');
+        // Set the href attribute to the resume URL
+        anchor.href = resumeUrl;
+        // Set the download attribute to force download
+        anchor.download = 'Rohit-mern-Resume.pdf';
+        // Programmatically trigger a click event on the anchor element
+        anchor.click();
+    };
+
   return (
   <div className="hero">
         <div className="wrapper">
@@ -48,8 +61,8 @@ export const Hero = () => {
                 <motion.h2 variants={textVariants}>ROHIT CHOUHAN</motion.h2>
                 <motion.h1 variants={textVariants}>Full Stack <br /> Web Developer</motion.h1>
                 <motion.div variants={textVariants} className="buttonsContainer">
-                    <motion.button variants={textVariants}>See the Latest Work</motion.button>
-                    <motion.button variants={textVariants}>Contact Me</motion.button>
+                    <motion.button variants={textVariants} onClick={downloadResume} >Download CV</motion.button>
+                    <motion.button variants={textVariants} ><a href="https://github.com/RohitChouhan79">See My latest Project</a> </motion.button>
                 </motion.div>
                 <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
             </motion.div>
