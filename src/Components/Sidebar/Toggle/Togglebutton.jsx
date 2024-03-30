@@ -1,7 +1,7 @@
 
 import { FiAlignJustify } from "react-icons/fi";
 import { GoX } from "react-icons/go";
-import { motion } from 'framer-motion' 
+// import { motion } from 'framer-motion' 
 
 const ToggleButton = ({ setOpen, open }) => {
     return (

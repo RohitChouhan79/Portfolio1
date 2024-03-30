@@ -49,3 +49,21 @@
     position: absolute;
     z-index: 1;
 }
+
+@media (max-width: 738px) {
+    .parallax>h1{
+        font-size: 52px;
+        text-align: center;
+    
+    }
+    .parallax>.mountains{
+        background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    .parallax>.planets{
+        background-size: contain;
+      background-repeat: no-repeat;
+    }
+   
+  }

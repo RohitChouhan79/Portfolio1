@@ -1,6 +1,6 @@
 .services {
     background: linear-gradient(180deg, #0c0c1d, #111132);
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,4 +88,80 @@
     border: none;
     cursor: pointer;
     box-shadow: 5px 1px 5px 5px rgba(255, 255, 0, 0.456);
+}
+
+@media (max-width: 738px){
+    .services{
+        opacity: 1;
+    }
+    .services> .textContainer{
+        align-self: end;
+      text-align: center;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .services> .textContainer>p {
+        font-size: 18px;
+      opacity: 1;
+    }
+    .services> .textContainer>hr{
+        width: 200px;
+      opacity: 1;
+      align-self: end;
+
+
+    }
+    .services>.titleContainer{
+        width: 100%;
+    }
+    .services>.titleContainer>.title {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    
+    }
+    .services>.titleContainer>.title >img {
+        width: 200px;
+          height: 50px;
+    }
+    .services>.titleContainer>.title >h1 {
+        font-size: 32px;
+        /* font-weight: 100; */
+
+}
+.services>.titleContainer>.title >button{
+    font-size: 16px;
+          width: 150px;
+          height: 50px;
+}
+
+.services>.listContainer {
+    flex-direction: column;
+      width: 100%;
+}
+
+.services>.listContainer>.box {
+    border: none;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+}
+.services>.listContainer>.box>p{
+    display: none;
+}
+.services>.listContainer>.box>br{
+    display: none;
+}
+
+
+
+
+.services>.listContainer>.box >button {
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: orange;
+    width: 50%;
+    padding: 5px;
+}
 }

@@ -4,7 +4,9 @@
     /* display: flex; */
     align-items: center;
     /* justify-content: space-between; */
-    background-color:#0C0C1E;
+    /* background-color:#0C0C1E;
+     */
+     /* background-color: red; */
 }
 
 .wrapper{
@@ -46,3 +48,13 @@
     font-size: 25px;
     color: aliceblue;
 }
+
+@media (max-width: 738px) {
+    .wrapper {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+    .wrapper>span{
+        display: none;
+    }
+  }

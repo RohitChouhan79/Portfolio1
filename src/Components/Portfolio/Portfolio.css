@@ -1,9 +1,9 @@
 .portfolio {
-    position: relative;
+    /* position: relative; */
     /* background-color: #fff; */
 }
 .portfolio>.progress {
-    position: sticky;
+    /* position: sticky; */
     /* background-color: #fff; */
     top: 0;
     left: 0;
@@ -81,4 +81,35 @@
     padding: 10px;
     width: 200px;
     cursor: pointer;
+  }
+
+
+  @media (max-width: 738px) {
+    .portfolio>.progress {
+      padding-top: 10px;
+      font-size: 24px;
+  }
+  .container>.wrapper {
+    flex-direction: column;
+  }
+
+  .container>.wrapper>.imageContainer {
+    width: 100%;
+    max-height: 200px;
+  }
+  .container>.wrapper>.textContainer {
+    transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+  }
+
+  .container>.wrapper>.textContainer>h2 {
+    font-size: 32px;
+  }
+
+  .container>.wrapper>.textContainer>p {
+    font-size: 16px;
+  }
+
   }

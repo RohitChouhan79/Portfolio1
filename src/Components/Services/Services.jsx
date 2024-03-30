@@ -23,10 +23,9 @@ const Services = () => {
 //   const ref = useRef();
 
   return (
-    <motion.div
+    <div
       className="services"
-      variants={variants}
-      initial="initial"
+      
 
       whileInView="animate"
     >
@@ -95,7 +94,7 @@ const Services = () => {
           <button>Learn More</button>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

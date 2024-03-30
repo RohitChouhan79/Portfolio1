@@ -45,4 +45,16 @@
     border: none;
     cursor: pointer;
     font-size: 22px;
+    color: black;
 }
+
+
+@media (max-width: 738px) {
+    .bgl{
+        width: 200px;
+        /* color: black; */
+    }
+    .links>a{
+        font-size: 20px;
+    }
+  }

@@ -134,3 +134,103 @@
 }
 
 
+
+@media (max-width: 738px) {
+
+.Skill-head>h1{
+    margin-top: 18px;
+    font-size: 38px;
+    text-align: center;
+    color: yellowgreen;
+    
+}
+.Skill-head>h1>span{
+    font-size: 55px;
+    color: Red;
+    font-variant: small-caps;
+
+}
+.Skill-head>h2{
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    color:purple;
+}
+.inskil > p {
+    margin-top: 2px;
+    font-size: 12px;
+}
+.html{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #E24D25;
+}
+.Python{
+    margin-top: 4px;
+    font-size: 50px;
+}
+
+.ex{
+    margin-top: 4px;
+    font-size: 50px;
+}
+
+.Css{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #016EB9;
+}
+
+.Js{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #F7DE1F;
+}
+.NJs{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #89C74F;
+}
+
+.react{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #00D7FA;
+}
+
+.MDB{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #50A84A;
+}
+
+.TS{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #2E77C4;
+}
+
+.TCSS{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #17B2B7;
+}
+.framer{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #000000;
+}
+
+.bootstrap{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #7710F7;
+}
+
+.firebase{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #F6840F;
+}
+
+  }
