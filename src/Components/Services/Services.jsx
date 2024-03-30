@@ -47,7 +47,7 @@ const Services = () => {
           <h1>
             <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
           </h1>
-          <button>WHAT I DO?</button>
+          <button ><a href="/#About">WHAT I DO?</a></button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -61,7 +61,7 @@ const Services = () => {
           Crafting bespoke web applications tailored to your specific business needs and requirements. Our custom web development services encompass comprehensive planning, design, and implementation, ensuring seamless integration of features and functionalities aligned with your unique objectives and goals.
           </p>
           <br />
-          <button>Learn More</button>
+          <button><a href="https://github.com/RohitChouhan79/Mern-Blog-App">Learn More</a></button>
         </motion.div>
         <motion.div
           className="box"
@@ -71,7 +71,7 @@ const Services = () => {
           <p>
           Designing and implementing RESTful or GraphQL APIs to facilitate seamless communication between the frontend and backend components of your application, ensuring efficient data exchange and interaction.
           </p>
-          <button>Learn More</button>
+          <button><a href="https://github.com/RohitChouhan79/INTERNSHALAAPICLONE">Learn More</a></button>
         </motion.div>
         <motion.div
           className="box"
@@ -81,7 +81,7 @@ const Services = () => {
           <p>
           build robust server-side architecture, implementing scalable APIs, handling data persistence with MongoDB, and ensuring seamless communication between the frontend and backend components of your application.
           </p>
-          <button>Learn More</button>
+          <button><a href="https://github.com/RohitChouhan79/Merchant-Api">Learn More</a></button>
         </motion.div>
         <motion.div
           className="box"
@@ -91,7 +91,7 @@ const Services = () => {
           <p>
           Crafting dynamic and interactive user interfaces using React.js library, ensuring seamless user experiences and high performance for modern web applications.
           </p>
-          <button>Learn More</button>
+          <button><a href="https://rohitchouhan.onrender.com/">Learn More</a></button>
         </motion.div>
       </motion.div>
     </div>

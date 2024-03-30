@@ -54,6 +54,19 @@ export const About = () => {
         };
     }, []);
 
+    const downloadResume = () => {
+        // Replace 'resume.pdf' with the path to your resume file
+        const resumeUrl = '/Rohit-mern-Resume.pdf';
+        // Create a temporary anchor element
+        const anchor = document.createElement('a');
+        // Set the href attribute to the resume URL
+        anchor.href = resumeUrl;
+        // Set the download attribute to force download
+        anchor.download = 'Rohit-mern-Resume.pdf';
+        // Programmatically trigger a click event on the anchor element
+        anchor.click();
+    };
+
     return (
         <div className='About'>
             <div className='wrapper'>
@@ -63,7 +76,7 @@ export const About = () => {
                     <motion.p variants={textVariants}>Experienced engineer proficient in ReactJS, Node.js, MongoDB, and more, with a strong portfolio. Excels in front-end technologies like ReactJS, HTML, CSS, and JavaScript, as well as backend development using Node.js, Express.js, and MongoDB. Committed to innovation and excellence in web development.</motion.p>
 
                     <motion.div variants={textVariants} className='buttoncontainer'>
-                        <motion.button variants={textVariants}>More About Me</motion.button>
+                        <motion.button variants={textVariants} onClick={downloadResume}>More About Me</motion.button>
                     </motion.div>
                 </motion.div>
             </div>

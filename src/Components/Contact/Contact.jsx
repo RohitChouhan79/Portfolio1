@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import "./Contact.css";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
-// import QRCode from 'qrcode.react';   
+// import QRCode from 'qrcode.react'; 
 
 const variants = {
   initial: {
