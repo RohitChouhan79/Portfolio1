@@ -60,8 +60,7 @@ export const Hero = () => {
         <div className="imagecontainer">
             <img src="/pofile.png" alt="" />
 
-        </div>
-        
+        </div>        
     </div>
   )
 }

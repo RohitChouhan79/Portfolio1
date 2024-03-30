@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./Contact.css";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+// import QRCode from 'qrcode.react';   
 
 const variants = {
   initial: {
@@ -68,6 +69,20 @@ const Contact = () => {
           <h2>Phone</h2>
           <span>+91 7974266346</span>
         </motion.div>
+        {/* <motion.div variants={variants} className="item1">
+        <div className='git'>
+          <QRCode value="https://github.com/RohitChouhan79" size={100}   level="L"/>
+          <h1>Github</h1>
+        </div>
+        <div className='git'>
+        <QRCode value="https://www.linkedin.com/in/rohit-chouhan/" size={100} level='H' />
+          <h1>Linkedin</h1>
+        </div> 
+        <div className='git'>
+          <QRCode value="https://www.instagram.com/ku.rohitbanna" size={100} level='H' />
+          <h1>Instagram</h1>
+        </div>
+        </motion.div> */}
       </motion.div>
       <div className="formContainer">
         <motion.div
@@ -114,6 +129,7 @@ const Contact = () => {
           {success && "Success"}
         </motion.form>
       </div>
+
     </motion.div>
   );
 };

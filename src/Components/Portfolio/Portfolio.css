@@ -1,9 +1,9 @@
 .portfolio {
-    /* position: relative; */
+    position: relative;
     /* background-color: #fff; */
 }
 .portfolio>.progress {
-    /* position: sticky; */
+    position: sticky;
     /* background-color: #fff; */
     top: 0;
     left: 0;

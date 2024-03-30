@@ -1,5 +1,5 @@
 .contact {
-    height: 100%;
+    height: 100vh;
     max-width: 1366px;
     margin: auto;
     display: flex;
@@ -16,9 +16,22 @@
     gap: 40px;
 
 }
+.contact>.textContainer>.item1{
+  display: flex;
+  gap: 45px;
+}
+.contact>.textContainer>.item1>.git{
+  color: red;
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-.contact>.textContainer>h1 {
-    font-size: 100px;
+
+.contact>.textContainer>h1{
+    font-size: 90px;
     line-height: 88px;
 
 }
@@ -92,4 +105,5 @@
 .contact>.formContainer>.phoneSvg {
   display: none;
 }
+
 }

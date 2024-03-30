@@ -69,6 +69,7 @@ export default function App() {
       <section id='Portfolio'><Parallax type="Portfolio"/></section>
       <section id='Project'><Portfolio />
       <section id='Contact'><Contact /></section>
+      
       </section>
       
     </div>
