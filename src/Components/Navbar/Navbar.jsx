@@ -14,7 +14,7 @@ export default function Navbar() {
             initial={{opacity:0,scale:0.3}}
             animate={{opacity:1,scale:1}}
             transition={{duration:0.5}}
-             >Rohit,s Port</motion.span>
+             ><img src="ICON.png"  alt="" />KU.ROHITBANNA</motion.span>
             <div className="social">
                 <a className='facebook' target="_blank" href="https://www.facebook.com/smartboy.rohit.5602"><FaFacebook /></a>
                 <a className='instagram' target="_blank" href="https://www.instagram.com/ku.rohitbanna"><FaInstagram /></a>

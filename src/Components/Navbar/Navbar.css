@@ -21,8 +21,12 @@
     
 .wrapper>span{
     font: bold;
+    display: flex;
+    align-items: center;
 }
-
+.wrapper>span>img{
+    width: 80px;
+}
 
 .social{
     display: flex;

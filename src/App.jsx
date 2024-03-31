@@ -13,27 +13,10 @@ import { useInView, motion } from 'framer-motion'
 
 export default function App() {
   const container = useRef(null)
-  const ref = useRef(null)
   const isInView = useInView(container);
   useEffect(()=>{
     console.log('is in view',isInView);
   },[isInView])
-  const variants = {
-    initial: {
-      x: -500,
-      y: 100,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        staggerChildren: 0.1,
-      },
-    },
-  };
   return (
     <div>
       <Cursor />
@@ -50,7 +33,7 @@ export default function App() {
         style={{
           transform: isInView ? "none" : "translateX(-500px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+          transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}
         >
         <Skill />

@@ -114,3 +114,18 @@
   height: 100px;
   background: white;
 }
+
+.imga>a{
+  display: flex;
+  align-items: center;
+}
+
+.imga>a{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+}
+.imga>a>img{
+  width: 80px;
+}
