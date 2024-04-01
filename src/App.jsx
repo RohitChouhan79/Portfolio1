@@ -28,16 +28,11 @@ export default function App() {
         <About/>
       </section>
       <section  id='Service'><Parallax type="service"/></section>
-      <section ref={container} id='Skill'>
-      <motion.div 
-        style={{
-          transform: isInView ? "none" : "translateX(-500px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-        }}
-        >
+      <section  id='Skill'>
+      <div>
         <Skill />
-        </motion.div></section>
+        </div>
+        </section>
       <section ref={container} id='Services'>
         <motion.div 
         style={{
