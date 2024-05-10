@@ -2,7 +2,7 @@ import React from 'react'
 import { FaHtml5,FaNodeJs,FaReact,FaPython,FaBootstrap  } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoJavascript,IoLogoFirebase } from "react-icons/io5";
-import { SiExpress, SiMongodb, SiTypescript,SiTailwindcss,SiFramer } from "react-icons/si";
+import { SiExpress, SiMongodb, SiTypescript,SiTailwindcss,SiFramer, SiJest } from "react-icons/si";
 
 import "./Skill.css"
 
@@ -60,6 +60,10 @@ export const Skill = () => {
                 </div><div className='inskil'>
                     <span className='firebase'><IoLogoFirebase/></span>
                     <p>Firebase</p>
+                </div>
+                <div className='inskil'>
+                    <span className='jest'><SiJest /></span>
+                    <p>JEST JS</p>
                 </div>
             </div>
         </div>

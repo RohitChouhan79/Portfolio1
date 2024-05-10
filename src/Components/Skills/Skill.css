@@ -133,6 +133,13 @@
     color: #F6840F;
 }
 
+.jest{
+    margin-top: 5px;
+    font-size: 60px;
+    color: #B03D5A;
+}
+
+
 
 
 @media (max-width: 738px) {
@@ -231,6 +238,12 @@
     margin-top: 4px;
     font-size: 50px;
     color: #F6840F;
+}
+
+.jest{
+    margin-top: 4px;
+    font-size: 50px;
+    color: #B03D5A;
 }
 
   }
