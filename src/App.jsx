@@ -10,7 +10,7 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
 import Cursor from './Components/Cursor/Cursor'
 import { useInView, motion } from 'framer-motion'
-import EnhancedExperiencePage from './Components/Experience/experience'
+import EnhancedExperiencePage from './Components/Experience/Index'
 
 export default function App() {
   const container = useRef(null)
