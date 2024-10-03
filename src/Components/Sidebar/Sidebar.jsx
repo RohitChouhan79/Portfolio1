@@ -29,11 +29,13 @@ export default function Sidebar() {
     },
   }
   return (
-    <motion.div className='sidebar' animate={open ? "open":"close"}>
+    <div>
+      <motion.div className='sidebar' animate={open ? "open":"close"}>
       <motion.div className='bgl' variants={variants}>
         <Link />
       </motion.div>
       <ToggleButton setOpen={setOpen} open={open} />
     </motion.div>
+    </div>
   )
 }

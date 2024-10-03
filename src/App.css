@@ -1,4 +1,7 @@
 /* overflow-y: scroll; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@
   }
    
 body{
-  background-color: black;
+  background-color: #0C0C1E;
   color: lightgrey;
   
 }
@@ -30,4 +33,8 @@ a{
 section{
     height: 100vh;
     scroll-snap-align: center;
+}
+
+.experience{
+  height:120vh;
 }

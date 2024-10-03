@@ -1,46 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import './About.css';
+import { Button } from '../ui/Button'; // Update the import path for your Button component
+import { FileText, Github, Linkedin,ArrowDownCircle } from 'lucide-react';
+// import { FileText, GitHub, Linkedin } from 'react-icons'; // Import the necessary icons
 
 export const About = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
-
-    const textVariants = {
-        initial: {
-            x: -500,
-            opacity: 0,
-        },
-        animate: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 1,
-                staggerChildren: 0.1,
-            },
-        },
-        scrollButton: {
-            opacity: 0,
-            y: 10,
-            transition: {
-                duration: 2,
-                repeat: Infinity,
-            },
-        },
-    };
-
-    const sliderVariants = {
-        initial: {
-            x: 0,
-        },
-        animate: {
-            x: "15%",
-            transition: {
-                repeat: Infinity,
-                repeatType: "mirror",
-                duration: 20,
-            },
-        },
-    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -48,41 +13,97 @@ export const About = () => {
         };
 
         window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const downloadResume = () => {
-        // Replace 'resume.pdf' with the path to your resume file
         const resumeUrl = '/Rohit-mern-Resume.pdf';
-        // Create a temporary anchor element
         const anchor = document.createElement('a');
-        // Set the href attribute to the resume URL
         anchor.href = resumeUrl;
-        // Set the download attribute to force download
         anchor.download = 'Rohit-mern-Resume.pdf';
-        // Programmatically trigger a click event on the anchor element
         anchor.click();
     };
 
-    return (
-        <div className='About'>
-            <div className='wrapper'>
-                <motion.div variants={textVariants} initial="initial" animate={scrollPosition > 100 ? "animate" : "initial"} className='textcontainer'>
-                    <motion.h1 variants={textVariants}>About &nbsp; <span>Me</span> </motion.h1>
-                    <motion.h2 variants={sliderVariants} initial="initial" animate="animate">Full Stack Web Devloper</motion.h2>
-                    <motion.p variants={textVariants}>Experienced engineer proficient in ReactJS, Node.js, MongoDB, and more, with a strong portfolio. Excels in front-end technologies like ReactJS, HTML, CSS, and JavaScript, as well as backend development using Node.js, Express.js, and MongoDB. Committed to innovation and excellence in web development.</motion.p>
+    // Calculate background and text Y positions based on scroll position
+    const backgroundY = `${scrollPosition * 0.1}%`; // Adjust the multiplier as needed
+    const textY = `${scrollPosition * 0.05}%`; // Adjust the multiplier as needed
 
-                    <motion.div variants={textVariants} className='buttoncontainer'>
-                        <motion.button variants={textVariants} onClick={downloadResume}>More About Me</motion.button>
-                    </motion.div>
+    return (
+        <div className=' bg-blue-100 h-full w-full'>
+            <div className="relative min-h-screen bg-gradient-to-b from-black overflow-hidden ">
+            <motion.div 
+                className="absolute inset-0 z-0"
+                style={{
+                    backgroundImage: "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80')",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    y: backgroundY
+                }}
+            />
+            <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8 text-white">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-center"
+                >
+                    <h1 className="mb-6 text-5xl font-bold">About <span className="text-blue-400">Me</span></h1>
+                    <motion.h2 
+                        className="mb-8 text-3xl font-semibold"
+                        animate={{ 
+                            x: [0, 10, 0],
+                            transition: { 
+                                duration: 2, 
+                                repeat: Infinity,
+                                ease: "linear"
+                            }
+                        }}
+                    >
+                        Full Stack Web Developer
+                    </motion.h2>
+                </motion.div>
+
+                <motion.p 
+                    className="max-w-2xl mb-8 text-lg text-center"
+                    // initial={{ opacity: 1 }}
+                    // animate={{ opacity: 1, y: textY }}
+                    // transition={{ delay: 0.5, duration: 0.8 }}
+                >
+                    Experienced engineer proficient in ReactJS, Node.js, MongoDB, and more, with a strong portfolio. 
+                    Excels in front-end technologies like ReactJS, HTML, CSS, and JavaScript, as well as backend 
+                    development using Node.js, Express.js, and MongoDB. Committed to innovation and excellence in web development.
+                </motion.p>
+
+                <div className="flex space-x-4">
+                    <Button onClick={downloadResume} variant="outline">
+                        <FileText className="w-4 h-4 mr-5" />
+                        Download Resume
+                    </Button>
+                    <Button variant="outline">
+                        <Github className="w-4 h-4 mr-2" />
+                        GitHub
+                    </Button>
+                    <Button variant="outline">
+                        <Linkedin className="w-4 h-4 mr-2" />
+                        LinkedIn
+                    </Button>
+                </div>
+
+                <motion.div
+                    className="absolute bottom-8"
+                    animate={{ 
+                        y: [0, 10, 0],
+                        transition: { 
+                            duration: 1.5, 
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        }
+                    }}
+                >
+                    <ArrowDownCircle className="w-10 h-10 text-white opacity-75" />
                 </motion.div>
             </div>
-            <motion.div variants={textVariants} initial="initial" animate={scrollPosition > 100 ? "animate" : "initial"} className="imagecontainer1">
-                <motion.img variants={textVariants} src="/pofile1.png" alt="" />
-            </motion.div>
+        </div>
         </div>
     );
 };

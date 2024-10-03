@@ -29,7 +29,7 @@ const Link = () => {
     },
   };
 
-  const items = ["Home","About", "Skill","Services","Project", "Contact"];
+  const items = ["Home","About", "Skill","Experience","Services","Project", "Contact"];
 
   return (
     <motion.div className="links" variants={parentVariants}>

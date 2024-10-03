@@ -43,7 +43,7 @@ const sliderVariants = {
 export const Hero = () => {
     const downloadResume = () => {
         // Replace 'resume.pdf' with the path to your resume file
-        const resumeUrl = '/Rohit-mern-Resume.pdf';
+        const resumeUrl = '/Resume-Rohit(2)';
         // Create a temporary anchor element
         const anchor = document.createElement('a');
         // Set the href attribute to the resume URL
@@ -59,7 +59,7 @@ export const Hero = () => {
         <div className="wrapper">
             <motion.div variants={textVariants}  initial="initial" animate="animate" className="textContainer">
                 <motion.h2 variants={textVariants}>ROHIT CHOUHAN</motion.h2>
-                <motion.h1 variants={textVariants}>Full Stack <br /> Web Developer</motion.h1>
+                <motion.h1 variants={textVariants}>Junior Software <br /> Engineer</motion.h1>
                 <motion.div variants={textVariants} className="buttonsContainer">
                     <motion.button variants={textVariants} onClick={downloadResume} >Download CV</motion.button>
                     <motion.button variants={textVariants} ><a href="https://github.com/RohitChouhan79">See My latest Project</a> </motion.button>

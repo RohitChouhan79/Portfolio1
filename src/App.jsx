@@ -10,6 +10,7 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
 import Cursor from './Components/Cursor/Cursor'
 import { useInView, motion } from 'framer-motion'
+import EnhancedExperiencePage from './Components/Experience/experience'
 
 export default function App() {
   const container = useRef(null)
@@ -31,6 +32,11 @@ export default function App() {
       <section  id='Skill'>
       <div>
         <Skill />
+        </div>
+        </section>
+        <section  id='Experience'>
+      <div className='experience'>
+        <EnhancedExperiencePage />
         </div>
         </section>
       <section ref={container} id='Services'>
